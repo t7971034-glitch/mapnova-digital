@@ -1,0 +1,1 @@
+console.log("MapNova Digital Website Loaded");
