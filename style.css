@@ -655,6 +655,26 @@ nav ul{
 
 @media (max-width:768px){
 
+    header{
+        padding-bottom:15px;
+    }
+
+    nav{
+        flex-direction:column;
+        height:auto;
+        padding:15px 0;
+    }
+
+    nav ul{
+        ...
+    }
+
+    .hero{
+        ...
+    }
+
+}
+
 .left h1{
     font-size:34px;
 }
@@ -732,7 +752,10 @@ nav ul li a{
 }
 
 .hero{
-    padding:120px 20px 70px;
+    padding-top:180px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:70px;
 }
 
 .hero-content{
