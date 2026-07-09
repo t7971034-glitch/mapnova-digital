@@ -17,13 +17,21 @@ margin:auto;
 }
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-z-index:999;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.20);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
 }
 
 nav{
@@ -64,38 +72,49 @@ border-radius:10px;
 }
 
 .hero{
-padding-top:140px;
-min-height:100vh;
-display:flex;
-align-items:center;
+    padding:170px 0 100px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+
+    background:linear-gradient(135deg,#f8fbff 0%,#eef4ff 100%);
+    overflow:hidden;
+    position:relative;
 }
 
 .hero-content{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    flex-wrap:wrap;
 }
 
 .left{
-flex:1;
+    flex:1;
+    animation:fadeInLeft 1s ease;
 }
 
 .right{
-flex:1;
+    flex:1;
+    display:flex;
+    justify-content:center;
+    animation:fadeInRight 1s ease;
 }
 
 .left h1{
-font-size:55px;
-line-height:1.2;
-margin-bottom:20px;
+    font-size:62px;
+    line-height:1.15;
+    font-weight:800;
+    color:#111827;
+    margin-bottom:20px;
 }
 
 .left p{
-font-size:20px;
-line-height:1.8;
-color:#666;
-margin-bottom:35px;
+    font-size:20px;
+    line-height:1.9;
+    color:#6b7280;
+    margin-bottom:35px;
 }
 
 .buttons{
@@ -122,9 +141,16 @@ font-weight:600;
 }
 
 .right img{
-width:100%;
-border-radius:20px;
-box-shadow:0 20px 50px rgba(0,0,0,.15);
+    width:100%;
+    max-width:550px;
+    border-radius:24px;
+    box-shadow:0 30px 60px rgba(37,99,235,.20);
+    transition:all .4s ease;
+}
+
+.right img:hover{
+    transform:translateY(-10px) scale(1.02);
+}
 }.services{
     padding:100px 0;
     background:#ffffff;
@@ -510,25 +536,29 @@ WhatsApp Floating Button
 
 .whatsapp{
     position:fixed;
-    right:25px;
-    bottom:25px;
-    width:65px;
-    height:65px;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
     background:#25D366;
     color:#fff;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:32px;
     text-decoration:none;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-    z-index:999;
-    transition:.3s;
+    font-size:34px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:0.3s;
 }
 
 .whatsapp:hover{
     transform:scale(1.1);
+}
+
+.whatsapp i{
+    line-height:1;
 }/*==============================
 Footer
 ==============================*/
