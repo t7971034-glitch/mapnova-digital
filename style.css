@@ -698,4 +698,62 @@ nav ul{
     font-size:26px;
 }
 
+}/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    height:auto;
+    padding:15px 0;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+}
+
+.hero{
+    padding:120px 20px 70px;
+}
+
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.left h1{
+    font-size:40px;
+}
+
+.left p{
+    font-size:18px;
+}
+
+.right img{
+    margin-top:40px;
+    max-width:100%;
+}
+
+.service-grid{
+    grid-template-columns:1fr;
+}
+
+.about-content{
+    flex-direction:column;
+}
+
+.contact-content{
+    grid-template-columns:1fr;
+}
+
+footer{
+    text-align:center;
+}
+
 }
