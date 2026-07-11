@@ -72,7 +72,7 @@ border-radius:10px;
 }
 
 .hero{
-    padding:170px 0 100px;
+    padding:140px 0 80px;
     min-height:100vh;
     display:flex;
     align-items:center;
@@ -700,7 +700,7 @@ nav ul{
 }
 
 .hero{
-    padding-top:180px;
+    padding:120px 20px 60px;
 }
 
 .contact-grid{
@@ -751,7 +751,7 @@ nav ul li a{
     font-size:14px;
 }
 
-.hero{.hero{
+.hero{
     margin-top:120px;
     padding:40px 20px 70px;
 }
