@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://t7971034-glitch.github.io/mapnova-digital/sitemap.xml
